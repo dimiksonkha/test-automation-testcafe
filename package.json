@@ -1,0 +1,23 @@
+{
+  "name": "testautomationtestcafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome ./tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimiksonkha/TestAutomationTestCafe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimiksonkha/TestAutomationTestCafe/issues"
+  },
+  "homepage": "https://github.com/dimiksonkha/TestAutomationTestCafe#readme",
+  "dependencies": {
+    "prettier": "^2.4.1",
+    "testcafe": "^1.16.0"
+  }
+}

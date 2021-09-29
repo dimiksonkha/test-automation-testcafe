@@ -4,7 +4,9 @@ import { Selector } from "testcafe";
 fixture `Login using UI`
     .page `https://opencart.abstracta.us/index.php?route=account/login`
 
-test('TestCafe login test', async t =>{
+test('login test', async t =>{
+    //validate text in page URl
+    //validate page title 
     
     // login form submission
     await t.typeText('#input-email', "sd@gd.com");

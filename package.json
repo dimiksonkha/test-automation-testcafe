@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:chrome": "testcafe chrome ./tests",
-    "test:chrome:headless": "testcafe chrome:headless ./tests",
-    "test:chrome:mobile": "testcafe chrome:emulation:device=iPhone X ./tests",
-    "test:firefox": "testcafe firefox ./tests",
-    "test:safari": "testcafe safari ./tests"
+    "test:chrome": "testcafe chrome ./tests -s takeOnFails=true",
+    "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iPhone X ./tests -s takeOnFails=true",
+    "test:firefox": "testcafe firefox ./tests -s takeOnFails=true",
+    "test:safari": "testcafe safari ./tests -s takeOnFails=true"
     
   },
   "repository": {

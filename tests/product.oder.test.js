@@ -7,7 +7,9 @@ fixture `Product Order as Registered Customer`
 
 })
 .beforeEach(async t=>{
-    //preserve cookie 
+    //preserve cookie
+    //await t.setTestSpeed(0.5);
+    await t.wait(5000); 
 
 })
 

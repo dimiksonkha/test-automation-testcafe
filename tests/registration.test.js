@@ -1,7 +1,7 @@
 import { Selector } from "testcafe";
 import {generateRandomEmail} from "../utils/utils"
 
-fixture `User Registration`
+fixture.skip `User Registration`
 .page `https://opencart.abstracta.us/index.php?route=account/register`
 
     const firstName = 'Test';

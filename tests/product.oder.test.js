@@ -1,6 +1,6 @@
 import { Selector } from "testcafe";
 
-fixture `Product Order as Registered Customer`
+fixture.skip `Product Order as Registered Customer`
 .page `http://opencart.abstracta.us/`
 .before(async t=>{
     //login
@@ -9,7 +9,7 @@ fixture `Product Order as Registered Customer`
 .beforeEach(async t=>{
     //preserve cookie
     //await t.setTestSpeed(0.5);
-    await t.wait(5000); 
+    //await t.wait(5000); 
 
 })
 

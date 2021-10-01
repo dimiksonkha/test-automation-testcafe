@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:chrome": "testcafe chrome ./tests -s takeOnFails=true",
-    "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true",
-    "test:chrome:mobile": "testcafe chrome:emulation:device=iPhone X ./tests -s takeOnFails=true",
-    "test:firefox": "testcafe firefox ./tests -s takeOnFails=true",
-    "test:safari": "testcafe safari ./tests -s takeOnFails=true"
-    
+    "test:chrome": "testcafe chrome ./tests",
+    "test:chrome:json": "testcafe chrome ./tests --reporter json",
+    "test:chrome:xunit": "testcafe chrome ./tests --reporter xunit",
+    "test:chrome:nunit": "testcafe chrome ./tests --reporter nunit",
+    "test:chrome:list": "testcafe chrome ./tests --reporter list",
+    "test:chrome:minimal": "testcafe chrome ./tests --reporter minimal",
+    "test:chrome:headless": "testcafe chrome:headless ./tests --disable-page-caching",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iPhone X ./tests",
+    "test:firefox": "testcafe firefox ./tests",
+    "test:firefox:headless": "testcafe firefox:headless ./tests --disable-page-caching",
+    "test:safari": "testcafe safari ./tests"
   },
   "repository": {
     "type": "git",
@@ -23,6 +28,11 @@
   "homepage": "https://github.com/dimiksonkha/TestAutomationTestCafe#readme",
   "dependencies": {
     "prettier": "^2.4.1",
-    "testcafe": "^1.16.0"
+    "testcafe": "^1.16.0",
+    "testcafe-reporter-json": "^2.2.0",
+    "testcafe-reporter-list": "^2.1.0",
+    "testcafe-reporter-minimal": "^2.1.0",
+    "testcafe-reporter-nunit": "^0.1.2",
+    "testcafe-reporter-xunit": "^2.1.0"
   }
 }

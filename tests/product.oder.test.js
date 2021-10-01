@@ -1,6 +1,9 @@
 import { Selector } from "testcafe";
+import Navbar from "../page-objects/components/Navbar";
 
-fixture.skip `Product Order as Registered Customer`
+const navbar = new Navbar();
+
+fixture `Product Order as Registered Customer`
 .page `http://opencart.abstracta.us/`
 .before(async t=>{
     //login
@@ -16,5 +19,8 @@ fixture.skip `Product Order as Registered Customer`
 test('should be able to search a product', async t =>{
     //validate text in page url
     //validate page title
+    
+    //Actions
+    navbar.search('iPhone'); 
 
 });

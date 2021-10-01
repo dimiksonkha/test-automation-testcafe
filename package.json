@@ -5,16 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test:chrome": "testcafe chrome ./tests",
+    "test:chrome:5": "testcafe -c 5 chrome ./tests",
     "test:chrome:json": "testcafe chrome ./tests --reporter json",
     "test:chrome:xunit": "testcafe chrome ./tests --reporter xunit",
     "test:chrome:nunit": "testcafe chrome ./tests --reporter nunit",
     "test:chrome:list": "testcafe chrome ./tests --reporter list",
     "test:chrome:minimal": "testcafe chrome ./tests --reporter minimal",
     "test:chrome:headless": "testcafe chrome:headless ./tests --disable-page-caching",
+    "test:chrome:headless:5": "testcafe -c 5 chrome:headless ./tests",
     "test:chrome:mobile": "testcafe chrome:emulation:device=iPhone X ./tests",
     "test:firefox": "testcafe firefox ./tests",
     "test:firefox:headless": "testcafe firefox:headless ./tests --disable-page-caching",
-    "test:safari": "testcafe safari ./tests"
+    "test:safari": "testcafe safari ./tests",
+    "test:multiple": "testcafe chrome,firefox ./tests"
   },
   "repository": {
     "type": "git",
@@ -34,5 +37,8 @@
     "testcafe-reporter-minimal": "^2.1.0",
     "testcafe-reporter-nunit": "^0.1.2",
     "testcafe-reporter-xunit": "^2.1.0"
+  },
+  "devDependencies": {
+    "xpath-to-css": "^1.0.5"
   }
 }

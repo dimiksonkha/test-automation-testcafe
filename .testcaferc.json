@@ -1,4 +1,5 @@
-{
+{ 
+    "skipJsErrors":true,
     "screenshots": {
         "path": "./screenshots",
         "takeOnFails": true,

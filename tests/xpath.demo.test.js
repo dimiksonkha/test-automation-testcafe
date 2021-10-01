@@ -1,7 +1,9 @@
 import { Selector } from "testcafe";
+import xPathToCss from "xpath-to-css";
+
 
 // ignor-prettier
-fixture `Login using UI`
+fixture.skip `Login using UI`
     .page `https://opencart.abstracta.us/index.php?route=account/login`
     
 
@@ -11,7 +13,10 @@ test('login test', async t =>{
 
     
     // Web Elements 
-    const emailField = Selector('#input-email');
+    const xPath = "/html/body/div[2]/div/div/div/div[2]/div/form/div[1]/input";
+    const css = xPathToCss(xPath);
+    const emailField = Selector(css);
+
     const passwordField = Selector('#input-password');
     const submitButton = Selector('input[type="submit"]');
     const actualHeadingInAuthorizedPage = Selector('#content > h2:nth-child(1)').innerText;
@@ -19,7 +24,7 @@ test('login test', async t =>{
     
     // Actions
     // await t.takeScreenshot();
-    await t.typeText(emailField,"sqa.test.eng@gmail.com");
+    await t.typeText(emailField,"sd@gd.com");
     await t.typeText(passwordField, "12345");
     //await t.takeElementScreenshot(submitButton);
     await t.click(submitButton);

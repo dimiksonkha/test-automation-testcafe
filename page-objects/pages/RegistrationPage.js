@@ -25,34 +25,35 @@ class RegistrationPage{
         await t.typeText(this.lastNameField, lastName, {paste:true});
         
     }
-    setEmail(email){
+    async setEmail(email){
         await t.typeText(this.emailField, email, {paste:true});
         
     }
-    setTelephoneNumber(phoneNumber){
+    async setTelephoneNumber(phoneNumber){
         await t.typeText(this.telephoneField, phoneNumber, {paste:true});
 
     }
 
-    setPassword(password){
+    async setPassword(password){
         await t.typeText(this.emailField, email, {paste:true});
         await t.typeText(this.emailField, email, {paste:true});
 
     }
 
-    agreePrivacyPolicy(){
+    async agreePrivacyPolicy(){
         await t.click(this.privacyPolicyCheckbox);  
 
     }
 
-    continueRegistration(){
+    async continueRegistration(){
         await t.click(this.continueRegistrationButton);   
     }
 
-    validateSuccessMessage(expectedSuccessMessage){
+    async validateSuccessMessage(expectedSuccessMessage){
         await t.expect(actualSuccessMessage).contains(expectedSuccessMessage);
     }
 
 
 
 }
+export default RegistrationPage

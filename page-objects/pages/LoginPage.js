@@ -3,12 +3,10 @@ const { Selector, t } = require("testcafe");
 class LoginPage{
     
     constructor(){
-         const emailField = Selector('#input-email');
-         const passwordField = Selector('#input-password');
-         const loginButton = Selector('input').withAttribute('type','submit');
-         const actualSuccessMessage = Selector('#content > h2:nth-child(1)').value;
-
-         
+         this.emailField = Selector('#input-email');
+         this.passwordField = Selector('#input-password');
+         this.loginButton = Selector('input').withAttribute('type','submit');
+         this.actualHeading = Selector('#content > h2:nth-child(1)').value;      
 
     }
 
@@ -27,6 +25,11 @@ class LoginPage{
     async validateSuccessfullLogin(expectedSuccessMessage){
         await t.expect(actualSuccessMessage).contains(expectedSuccessMessage);
     }
+
+    getActualHeading(){
+        return this.actualHeading;
+    }
+
 
 
 }

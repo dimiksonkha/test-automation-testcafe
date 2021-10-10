@@ -3,15 +3,15 @@ const { Selector, t } = require("testcafe");
 class RegistrationPage{
     
     constructor(){
-         const firstNameField = Selector('#input-firstname');
-         const lastNameField = Selector('#input-lastname');
-         const emailField = Selector('#input-email');
-         const telephoneField = Selector('#input-telephone');
-         const passwordField = Selector('#input-password');
-         const confirmPasswordField = Selector('#input-confirm');
-         const privacyPolicyCheckbox = Selector('input[type="checkbox"]');
-         const continueRegistrationButton = Selector('input').withAttribute('type','submit');
-         const actualSuccessMessage = Selector('#content  p:nth-child(3)').value;
+         this.firstNameField = Selector('#input-firstname');
+         this.lastNameField = Selector('#input-lastname');
+         this.emailField = Selector('#input-email');
+         this.telephoneField = Selector('#input-telephone');
+         this.passwordField = Selector('#input-password');
+         this.confirmPasswordField = Selector('#input-confirm');
+         this.privacyPolicyCheckbox = Selector('input[type="checkbox"]');
+         this.continueRegistrationButton = Selector('input').withAttribute('type','submit');
+         this.actualSuccessMessage = Selector('#content  p:nth-child(3)').value;
          
 
     }
@@ -35,8 +35,8 @@ class RegistrationPage{
     }
 
     async setPassword(password){
-        await t.typeText(this.emailField, email, {paste:true});
-        await t.typeText(this.emailField, email, {paste:true});
+        await t.typeText(this.passwordField, password, {paste:true});
+        await t.typeText(this.confirmPasswordField, password, {paste:true});
 
     }
 

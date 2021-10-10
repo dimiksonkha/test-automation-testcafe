@@ -4,7 +4,7 @@ class SuccessPage{
     
     constructor(){
 
-         const actualSuccessMessage = Selector('#content > h1').value;       
+         this.actualSuccessMessage = Selector('#content > h1').innerText;       
 
     }
 

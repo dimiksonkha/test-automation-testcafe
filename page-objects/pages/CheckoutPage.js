@@ -3,27 +3,27 @@ const { Selector, t } = require("testcafe");
 class CheckoutPage{
     
     constructor(){
-         const gustCheckout = Selector(':nth-child(1) > :nth-child(4) > label');
-         const continueAccountButton = Selector('#button-account');
-         const billingFirstName = Selector('#input-payment-firstname');
-         const billingLastName = Selector('#input-payment-lastname');
-         const billingEmail = Selector('#input-payment-email');
-         const billingPhoneNumebr = Selector('#input-payment-telephone');
-         const billingAddressOne = Selector('#input-payment-address-1');
-         const billingCity = Selector('#input-payment-city');
-         const billingPostcode = Selector('#input-payment-postcode');
-         const billingCountrySelect = Selector('#input-payment-country');
-         const billingCountryOption = billingCountrySelect.find('option');
-         const billingStateSelect = Selector('#input-payment-zone');
-         const billingStateOption = billingStateSelect.find('option');
-         const paymentAddressButton = Selector('#button-payment-address');
-         const continueBillingInfoButton = Selector('#button-guest');
-         const continueShippingInformationButton = Selector('#button-shipping-address');
-         const continueDeliveryMethodButton = Selector('#button-shipping-method');
-         const termsAndConditionForRegistredCustomerCheckbox = Selector('[type="checkbox"]');
-         const termsAndConditionForGuestCustomerCheckbox = Selector('.pull-right [type="checkbox"]');
-         const continuePaymentMethodButton = Selector('#button-payment-method');
-         const confirmOrderButton = Selector('#button-confirm');
+         this.gustCheckout = Selector(':nth-child(1) > :nth-child(4) > label');
+         this.continueAccountButton = Selector('#button-account');
+         this.billingFirstName = Selector('#input-payment-firstname');
+         this.billingLastName = Selector('#input-payment-lastname');
+         this.billingEmail = Selector('#input-payment-email');
+         this.billingPhoneNumebr = Selector('#input-payment-telephone');
+         this.billingAddressOne = Selector('#input-payment-address-1');
+         this.billingCity = Selector('#input-payment-city');
+         this.billingPostcode = Selector('#input-payment-postcode');
+         this.billingCountrySelect = Selector('#input-payment-country');
+         this.billingCountryOption = billingCountrySelect.find('option');
+         this.billingStateSelect = Selector('#input-payment-zone');
+         this.billingStateOption = billingStateSelect.find('option');
+         this.paymentAddressButton = Selector('#button-payment-address');
+         this.continueBillingInfoButton = Selector('#button-guest');
+         this.continueShippingInformationButton = Selector('#button-shipping-address');
+         this.continueDeliveryMethodButton = Selector('#button-shipping-method');
+         this.termsAndConditionForRegistredCustomerCheckbox = Selector('[type="checkbox"]');
+         this.termsAndConditionForGuestCustomerCheckbox = Selector('.pull-right [type="checkbox"]');
+         this.continuePaymentMethodButton = Selector('#button-payment-method');
+         this.confirmOrderButton = Selector('#button-confirm');
 
 
 

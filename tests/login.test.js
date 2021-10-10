@@ -1,4 +1,7 @@
 import { Selector } from "testcafe";
+import LoginPage from "../page-objects/pages/LoginPage";
+
+const loginPage = new LoginPage();
 
 // ignor-prettier
 fixture `Login using UI`
@@ -8,22 +11,13 @@ fixture `Login using UI`
 test('login test', async t =>{
     //validate text in page URl
     //validate page title 
-
-    
-    // Web Elements 
-    const emailField = Selector('#input-email');
-    const passwordField = Selector('#input-password');
-    const submitButton = Selector('input[type="submit"]');
-    const actualHeadingInAuthorizedPage = Selector('#content > h2:nth-child(1)').innerText;
-    const expectedHeadingInAuthorizedPage = "My Account";
+    const expectedHeading = "My Account";
     
     // Actions
-    // await t.takeScreenshot();
-    await t.typeText(emailField,"sqa.test.eng@gmail.com");
-    await t.typeText(passwordField, "12345");
-    //await t.takeElementScreenshot(submitButton);
-    await t.click(submitButton);
+    loginPage.setEmail("sqa.test.eng@gmail.com");
+    loginPage.setPassword("12345")
+    loginPage.clickLoginButton(); 
 
     // Validation
-    await t.expect(actualHeadingInAuthorizedPage).contains(expectedHeadingInAuthorizedPage);
-})    
+    await t.expect('My Account').contains(expectedHeading);
+});    

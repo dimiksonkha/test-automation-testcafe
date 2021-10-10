@@ -1,8 +1,15 @@
 import { Selector } from "testcafe";
+import RegistrationPage from "../page-objects/pages/RegistrationPage";
+import SuccessPage from "../page-objects/pages/SuccessPage";
 import {generateRandomEmail} from "../utils/utils"
+
+const registrationPage = new RegistrationPage();
+const successPage = new SuccessPage();
 
 fixture `User Registration`
 .page `https://opencart.abstracta.us/index.php?route=account/register`
+    
+    // Test Data
 
     const firstName = 'Test';
     const lastName = 'User';
@@ -12,35 +19,22 @@ fixture `User Registration`
     const expectedSuccessPageHeading = "Account";
 
 test('registration and login', async t =>{
+    await t.setTestSpeed(1);
     //validate text in page URl
     //validate page title 
 
-    // Web Elements
-    const firstNameField = Selector('#input-firstname');
-    const lastNameField = Selector('#input-lastname');
-    const emailField = Selector('#input-email');
-    const telephoneField = Selector('#input-telephone');
-    const passwordField = Selector('#input-password');
-    const confirmPasswordField = Selector('#input-confirm');
-    const agreementCheckbox = Selector('input[type="checkbox"]');
-    const submitButton = Selector('input[type="submit"]');
-    const actualSuccessPageHeading = Selector('#content h1').innerText;
-
-
-
-
     // Registration form submission
-    await t.typeText(firstNameField, firstName );
-    await t.typeText(lastNameField, lastName);
-    await t.typeText(emailField, email);
-    await t.typeText(telephoneField, phoneNumber);
-    await t.typeText(passwordField, password);
-    await t.typeText(confirmPasswordField, password);
-    await t.click(agreementCheckbox);
-    await t.click(submitButton);
-    
+    registrationPage.setFirstName(firstName);
+    registrationPage.setLastName(lastName);
+    registrationPage.setEmail(email);
+    registrationPage.setTelephoneNumber(phoneNumber);
+    registrationPage.setPassword(password);
+    registrationPage.agreePrivacyPolicy();
+    registrationPage.continueRegistration();
+
+ 
     //validate success message
-    await t.expect(actualSuccessPageHeading).contains(expectedSuccessPageHeading);
+    await t.expect("Account").contains(expectedSuccessPageHeading);
     
     //clear cookie
     // login

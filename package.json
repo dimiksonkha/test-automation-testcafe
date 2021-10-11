@@ -11,6 +11,7 @@
     "test:chrome:nunit": "testcafe chrome ./tests --reporter nunit",
     "test:chrome:list": "testcafe chrome ./tests --reporter list",
     "test:chrome:minimal": "testcafe chrome ./tests --reporter minimal",
+    "test:chrome:html": "testcafe chrome ./tests --reporter html:reports/report.html",
     "test:chrome:headless": "testcafe chrome:headless ./tests --disable-page-caching",
     "test:chrome:headless:5": "testcafe -c 5 chrome:headless ./tests",
     "test:chrome:mobile": "testcafe chrome:emulation:device=iPhone X ./tests",
@@ -32,6 +33,7 @@
   "dependencies": {
     "prettier": "^2.4.1",
     "testcafe": "^1.16.0",
+    "testcafe-reporter-html": "^1.4.6",
     "testcafe-reporter-json": "^2.2.0",
     "testcafe-reporter-list": "^2.1.0",
     "testcafe-reporter-minimal": "^2.1.0",

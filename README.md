@@ -16,6 +16,8 @@
 <code>npm run test:chrome:list</code><br>
 *Chrome with Minimal Reporter:*
 <code>npm run test:chrome:minimal</code><br>
+*Chrome with HTML Reporter:*
+<code>npm run test:chrome:html</code><br>
 *Chrome Headless:*
 <code>npm run test:chrome:headless</code><br>
 *Chrome Headless Concurrent:*

@@ -13,9 +13,9 @@ class CheckoutPage{
          this.billingCity = Selector('#input-payment-city');
          this.billingPostcode = Selector('#input-payment-postcode');
          this.billingCountrySelect = Selector('#input-payment-country');
-         this.billingCountryOption = billingCountrySelect.find('option');
+         this.billingCountryOption = this.billingCountrySelect.find('option');
          this.billingStateSelect = Selector('#input-payment-zone');
-         this.billingStateOption = billingStateSelect.find('option');
+         this.billingStateOption = this.billingStateSelect.find('option');
          this.paymentAddressButton = Selector('#button-payment-address');
          this.continueBillingInfoButton = Selector('#button-guest');
          this.continueShippingInformationButton = Selector('#button-shipping-address');
@@ -94,10 +94,10 @@ class CheckoutPage{
         await t.click(this.continueShippingInformationButton);
       }
   
-      async continueDeliveryMethod(){
+    async continueDeliveryMethod(){
         await t.click(this.continueDeliveryMethodButton);
           
-      }
+    }
   
       async continuePaymentMethodAsRegisterCustomer(){
         await t

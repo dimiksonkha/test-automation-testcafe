@@ -4,11 +4,13 @@ class SuccessPage{
     
     constructor(){
 
-         this.actualSuccessMessage = Selector('#content > h1').innerText;       
+         this.actualSuccessMessage = Selector('#content > h1');       
 
     }
 
-    validateSuccessMessage(expectedSuccessMessage){
+    async validateSuccessMessage(expectedSuccessMessage){
+        await t.expect(this.actualSuccessMessage.innerText).contains(expectedSuccessMessage);
+
         
     }
 

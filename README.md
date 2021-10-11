@@ -1,7 +1,24 @@
 # TestAutomationTestCafe
+### Project Information
+[Store](http://opencart.abstracta.us/) application test has been automated and validated with TestCafe 
+### Tools & Technologies:
+* **Programming Language:** JavaScript
+* **Automation Frameworks:** TestCafe
+* **Design Pattern:** Page Object Model
+
+### Core Features:
+* App Automation
+* App Validation
+* Supports for multiple reports (JSON,xUnit,nUnit,List,HTML etc.)
+* Test script written for cross browser testing, concurrent test execution and headless browsers     
+
+
 ### Install:<br>
-<code>npm install</code>
+Make sure you have node js installed in your machine then type <code>npm install</code> in terminal. It will automatically install all required node packages for you. 
+
 ### Run:<br>
+To execute TestCafe tests type the following command in terminal.See the <code>packages.json</code> file for details of every command.
+ 
 *Chrome:*
 <code>npm run test:chrome</code><br>
 *Chrome Concurrent:*

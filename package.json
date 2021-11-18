@@ -13,6 +13,7 @@
     "test:chrome:minimal": "testcafe chrome ./tests --reporter minimal",
     "test:chrome:html": "testcafe chrome ./tests --reporter html:reports/report.html",
     "test:chrome:headless": "testcafe chrome:headless ./tests --disable-page-caching",
+    "test:chrome:headless:meta": "testcafe chrome:headless ./tests --disable-page-caching --test-meta mode=ui",
     "test:chrome:headless:5": "testcafe -c 5 chrome:headless ./tests",
     "test:chrome:mobile": "testcafe chrome:emulation:device=iPhone X ./tests",
     "test:firefox": "testcafe firefox ./tests",

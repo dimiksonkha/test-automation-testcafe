@@ -37,6 +37,8 @@ To execute TestCafe tests type the following command in terminal.See the <code>p
 <code>npm run test:chrome:html</code><br>
 *Chrome Headless:*
 <code>npm run test:chrome:headless</code><br>
+*Chrome Headless with --test-meta filter:*
+<code>npm run test:chrome:headless:meta</code><br>
 *Chrome Headless Concurrent:*
 <code>npm run test:chrome:headless:5</code><br>
 *Chrome Mobile:*

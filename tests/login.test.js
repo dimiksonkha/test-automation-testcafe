@@ -1,15 +1,21 @@
 import { Selector } from "testcafe";
 import LoginPage from "../page-objects/pages/LoginPage";
+import { ClientFunction } from "testcafe";
 
 const loginPage = new LoginPage();
 
 // ignor-prettier
 fixture `Login using UI`
     .page `https://opencart.abstracta.us/index.php?route=account/login`
+
+    const getPageUrl = ClientFunction(()=> window.location.href);
+    console.log(getPageUrl)
     
 
-test('login test', async t =>{
+test.meta('mode','ui')('login test', async t =>{
     //validate text in page URl
+    await t.expect(getPageUrl()).contains("login");
+
     //validate page title 
     const expectedHeading = "My Account";
     

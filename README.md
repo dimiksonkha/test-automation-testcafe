@@ -21,6 +21,8 @@ To execute TestCafe tests type the following command in terminal.See the <code>p
  
 *Chrome:*
 <code>npm run test:chrome</code><br>
+*Chrome with debug mode on fail:*
+<code>npm run test:chrome:debug</code><br>
 *Chrome Concurrent:*
 <code>npm run test:chrome:5</code><br>
 *Chrome with JSON Reporter:*

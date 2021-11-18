@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:chrome": "testcafe chrome ./tests",
+    "test:chrome:debug": "testcafe chrome ./tests --debug-on-fail",
     "test:chrome:5": "testcafe -c 5 chrome ./tests",
     "test:chrome:json": "testcafe chrome ./tests --reporter json",
     "test:chrome:xunit": "testcafe chrome ./tests --reporter xunit",

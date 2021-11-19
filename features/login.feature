@@ -1,7 +1,7 @@
 Feature: Login Feature Tests
 
     User should be able to login into the system
-
+    @in_progress
     Scenario Outline: User should be able to login with valid credentials
     Given I am on the login page
     When I type <username> and <password> 

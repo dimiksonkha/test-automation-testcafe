@@ -58,7 +58,7 @@ To execute TestCafe tests type the following command in terminal.See the <code>p
 To execute Cucumber tests type the following command in terminal.
  
 *Cucumber without Tags:*
-<code>./node_modules/.bin/cucumber-js --tags "@in_progress"</code><br>
+<code>./node_modules/.bin/cucumber-js</code><br>
 
 *Cucumber with Tags. i.e run with @in_progress tag:*
 <code>./node_modules/.bin/cucumber-js --tags "@in_progress"</code><br>

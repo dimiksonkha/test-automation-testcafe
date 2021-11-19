@@ -1,0 +1,20 @@
+[
+    {
+        "firstName": "Sulaiman",
+        "lastName": "Haque",
+        "phoneNumber":"882408451358",
+        "password":"12345"
+    },
+    {
+        "firstName": "Emdadul",
+        "lastName": "Haque",
+        "phoneNumber":"882408451359",
+        "password":"67890"
+    },
+    {
+        "firstName": "Emdad",
+        "lastName": "Hossain",
+        "phoneNumber":"882408451368",
+        "password":"54321"
+    }
+]

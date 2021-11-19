@@ -22,7 +22,7 @@ test.meta('mode','ui')('login test', async t =>{
     // Actions
     loginPage.setEmail("sqa.test.eng@gmail.com");
     loginPage.setPassword("12345")
-    loginPage.clickLoginButton(); 
+=   loginPage.clickLoginButton(); 
 
     // Validation
     await t.expect('My Account').contains(expectedHeading);

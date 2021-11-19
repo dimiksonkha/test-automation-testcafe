@@ -20,7 +20,9 @@
     "test:firefox": "testcafe firefox ./tests",
     "test:firefox:headless": "testcafe firefox:headless ./tests --disable-page-caching",
     "test:safari": "testcafe safari ./tests",
-    "test:multiple": "testcafe chrome,firefox ./tests"
+    "test:multiple": "testcafe chrome,firefox ./tests",
+    "test:cucumber":"cucumber-js",
+    "test:cucumber:tags":"cucumber-js --tags '@login'"
   },
   "repository": {
     "type": "git",

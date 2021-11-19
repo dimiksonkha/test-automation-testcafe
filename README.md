@@ -16,7 +16,7 @@
 ### Install:<br>
 Make sure you have node js installed in your machine then type <code>npm install</code> in terminal. It will automatically install all required node packages for you. 
 
-### Run:<br>
+### Run TestCafe tests:<br>
 To execute TestCafe tests type the following command in terminal.See the <code>packages.json</code> file for details of every command.
  
 *Chrome:*
@@ -53,3 +53,11 @@ To execute TestCafe tests type the following command in terminal.See the <code>p
 <code>npm run test:safari</code><br>
 *Test in Multiple Browsers:*
 <code>npm run test:multiple</code><br>
+
+### Run Cucumber tests:<br>
+To execute Cucumber tests type the following command in terminal.
+ 
+*Chrome:*
+<code>npx cucumber-js</code><br>
+
+

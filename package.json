@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:chrome": "testcafe chrome ./tests",
+    "test:chrome": "testcafe chrome ./tests ",
     "test:chrome:debug": "testcafe chrome ./tests --debug-on-fail",
     "test:chrome:5": "testcafe -c 5 chrome ./tests",
     "test:chrome:json": "testcafe chrome ./tests --reporter json",
@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/dimiksonkha/TestAutomationTestCafe#readme",
   "dependencies": {
+    "cucumber": "^7.0.0-rc.0",
     "prettier": "^2.4.1",
     "testcafe": "^1.16.0",
     "testcafe-reporter-html": "^1.4.6",

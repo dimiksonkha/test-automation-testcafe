@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1637571820456' stop='1637571820456'>
+    <name>Product Order </name>
+    <title>Product Order </title>
+    <test-cases>
+        <test-case start='1637571820456' status='passed' stop='1637571825765'>
+            <name>should be able to order a  product as registered customer</name>
+            <title>should be able to order a  product as registered customer</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 96.0.4664.55 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

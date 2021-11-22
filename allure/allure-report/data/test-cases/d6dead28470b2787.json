@@ -1,0 +1,54 @@
+{
+  "uid" : "d6dead28470b2787",
+  "name" : "should be able to order a  product as guest customer",
+  "fullName" : "Product Order .should be able to order a  product as guest customer",
+  "historyId" : "bf0097cb023c8409ac225f0838d6fc27",
+  "time" : {
+    "start" : 1637571815140,
+    "stop" : 1637571823332,
+    "duration" : 8192
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusMessage" : "This test has been passed.",
+  "statusTrace" : "no error",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "undefined"
+  }, {
+    "name" : "suite",
+    "value" : "Product Order "
+  }, {
+    "name" : "testClass",
+    "value" : "Product Order "
+  }, {
+    "name" : "testMethod",
+    "value" : "should be able to order a  product as guest customer"
+  }, {
+    "name" : "package",
+    "value" : "Product Order "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "User Agent",
+    "value" : "Chrome 96.0.4664.55 / macOS 10.15.7"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d6dead28470b2787.json",
+  "parameterValues" : [ "Chrome 96.0.4664.55 / macOS 10.15.7" ]
+}

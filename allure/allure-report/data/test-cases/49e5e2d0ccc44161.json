@@ -1,0 +1,54 @@
+{
+  "uid" : "49e5e2d0ccc44161",
+  "name" : "login test",
+  "fullName" : "Login using UI.login test",
+  "historyId" : "56732d3db964f082f7dc611a01a6b67e",
+  "time" : {
+    "start" : 1637571806939,
+    "stop" : 1637571821479,
+    "duration" : 14540
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusMessage" : "This test has been passed.",
+  "statusTrace" : "no error",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "undefined"
+  }, {
+    "name" : "suite",
+    "value" : "Login using UI"
+  }, {
+    "name" : "testClass",
+    "value" : "Login using UI"
+  }, {
+    "name" : "testMethod",
+    "value" : "login test"
+  }, {
+    "name" : "package",
+    "value" : "Login using UI"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "User Agent",
+    "value" : "Chrome 96.0.4664.55 / macOS 10.15.7"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "49e5e2d0ccc44161.json",
+  "parameterValues" : [ "Chrome 96.0.4664.55 / macOS 10.15.7" ]
+}

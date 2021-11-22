@@ -53,3 +53,8 @@ To execute TestCafe tests type the following command in terminal.See the <code>p
 <code>npm run test:safari</code><br>
 *Test in Multiple Browsers:*
 <code>npm run test:multiple</code><br>
+*Run test with Allure Report:*
+<code>npm run test:chrome:allure</code>
+*View allure report in browser:*
+<code>allure generate allure/allure-results --clean -o allure/allure-report && allure open allure/allure-report
+So</code>

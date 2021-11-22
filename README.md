@@ -61,7 +61,7 @@ To execute TestCafe tests type the following command in terminal.See the <code>p
 *Run test with Allure Report:*
 <code>npm run test:chrome:allure</code><br>
 *View allure report in browser:*
-<code>allure generate allure/allure-results --clean -o allure/allure-report && allure open allure/allure-report</code>
+<code>allure generate allure/allure-results --clean -o allure/allure-report && allure open allure/allure-report</code><br>
 *Run tests in Docker container*<br>
 1. Install docker on your machine <br>
 2. Download testcafe docker images: <code>docker pull testcafe/testcafe</code>

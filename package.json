@@ -21,8 +21,8 @@
     "test:firefox:headless": "testcafe firefox:headless ./tests --disable-page-caching",
     "test:safari": "testcafe safari ./tests",
     "test:multiple": "testcafe chrome,firefox ./tests",
-    "test:cucumber":"cucumber-js",
-    "test:cucumber:tags":"cucumber-js --tags '@login'"
+    "test:cucumber": "cucumber-js",
+    "test:cucumber:tags": "cucumber-js --tags '@login'"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
   "dependencies": {
     "base64-img": "^1.0.4",
     "cucumber": "^7.0.0-rc.0",
+    "cucumber-html-reporter": "^5.5.0",
     "prettier": "^2.4.1",
     "testcafe": "^1.16.0",
     "testcafe-reporter-html": "^1.4.6",

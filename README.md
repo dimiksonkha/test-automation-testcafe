@@ -65,6 +65,6 @@ To execute TestCafe tests type the following command in terminal.See the <code>p
 *Run tests in Docker container*<br>
 1. Install docker on your machine <br>
 2. Download testcafe docker images: <code>docker pull testcafe/testcafe</code>
-3. Run test: <code>docker run -v {$PWD}/tests:/tests -it testcafe/testcafe firefox /tests</code>
+3. Run test: <code>docker run -v $PWD/tests:/tests -it testcafe/testcafe firefox /tests</code>
 
 

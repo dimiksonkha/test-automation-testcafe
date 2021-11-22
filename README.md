@@ -4,6 +4,7 @@
 ### Tools & Technologies:
 * **Programming Language:** JavaScript
 * **Automation Frameworks:** TestCafe
+* **BDD Tool:** Cucumber
 * **Design Pattern:** Page Object Model
 
 ### Core Features:

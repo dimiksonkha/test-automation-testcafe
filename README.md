@@ -54,6 +54,8 @@ To execute TestCafe tests type the following command in terminal.See the <code>p
 <code>npm run test:firefox:headless</code><br>
 *Safari:*
 <code>npm run test:safari</code><br>
+*Run tests in remote devices:*
+<code>npm run test:remote</code><br>
 *Test in Multiple Browsers:*
 <code>npm run test:multiple</code><br>
 *Run test with Allure Report:*

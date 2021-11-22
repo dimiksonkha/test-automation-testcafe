@@ -22,7 +22,8 @@
     "test:safari": "testcafe safari ./tests",
     "test:multiple": "testcafe chrome,firefox ./tests",
     "test:cucumber": "cucumber-js",
-    "test:cucumber:tags": "cucumber-js --tags '@login'"
+    "test:cucumber:tags": "cucumber-js --tags '@login'",
+    "test:cucumber:html":"cucumber-js --tags '@login' --format html:reports/report.html"
   },
   "repository": {
     "type": "git",

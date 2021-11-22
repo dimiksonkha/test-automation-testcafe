@@ -12,7 +12,8 @@
 * App Validation
 * Supports for multiple reports (JSON,xUnit,nUnit,List,HTML, Cucumber html, Allure etc.)
 * Test script written for cross browser testing, concurrent test execution and headless browsers
-* Supports Data driven tests (checkout the data driven branch), Behavior-driven development(checkout the bdd branch)     
+* Supports Data driven tests (checkout the data driven branch), Behavior-driven development(checkout the bdd branch)
+* Github Actions implemented     
 
 
 ### Install:<br>

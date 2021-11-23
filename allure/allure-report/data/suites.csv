@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Nov 22 15:03:55 BDT 2021","Mon Nov 22 15:04:03 BDT 2021","7722","","User Registration","","User Registration","registration and login","registration and login",""
-"passed","Mon Nov 22 15:03:35 BDT 2021","Mon Nov 22 15:03:43 BDT 2021","8192","","Product Order ","","Product Order ","should be able to order a  product as guest customer","should be able to order a  product as guest customer",""
-"passed","Mon Nov 22 15:03:40 BDT 2021","Mon Nov 22 15:03:45 BDT 2021","5309","","Product Order ","","Product Order ","should be able to order a  product as registered customer","should be able to order a  product as registered customer",""
-"passed","Mon Nov 22 15:03:26 BDT 2021","Mon Nov 22 15:03:41 BDT 2021","14540","","Login using UI","","Login using UI","login test","login test",""

@@ -6,14 +6,22 @@
 * **Automation Frameworks:** TestCafe
 * **BDD Tool:** Cucumber
 * **Design Pattern:** Page Object Model
+* **CI Sever:** Github Actions
 
 ### Core Features:
 * App Automation
 * App Validation
+* Report Portal Integration
 * Supports for multiple reports (JSON,xUnit,nUnit,List,HTML, Cucumber html, Allure etc.)
 * Test script written for cross browser testing, concurrent test execution and headless browsers
 * Supports Data driven tests (checkout the data driven branch), Behavior-driven development(checkout the bdd branch)
-* Github Actions implemented     
+* Github Actions implemented
+
+### Branches:
+* master: all implementation with core testcafe features
+* data-driven tests: data driven tests implemented in this branch
+* bdd: Behavior-driven development implemented in this branch
+
 
 
 ### Install:<br>
@@ -64,7 +72,8 @@ To execute TestCafe tests type the following command in terminal.See the <code>p
 <code>allure generate allure/allure-results --clean -o allure/allure-report && allure open allure/allure-report</code><br>
 *Run tests in Docker container*<br>
 1. Install docker on your machine <br>
-2. Download testcafe docker images: <code>docker pull testcafe/testcafe</code>
-3. Run test: <code>docker run -v $PWD/tests:/tests -it testcafe/testcafe firefox /tests</code>
-
+2. Download testcafe docker images: <code>docker pull testcafe/testcafe</code><br>
+3. Run test: <code>docker run -v $PWD/tests:/tests -it testcafe/testcafe firefox /tests</code><br>
+*Run tests with report portal*
+<code>npm run test:reportportal</code>
 

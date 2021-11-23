@@ -22,7 +22,8 @@
     "test:firefox": "testcafe firefox ./tests",
     "test:firefox:headless": "testcafe firefox:headless ./tests --disable-page-caching",
     "test:safari": "testcafe safari ./tests",
-    "test:multiple": "testcafe chrome,firefox ./tests"
+    "test:multiple": "testcafe chrome,firefox ./tests",
+    "test:reportportal": "testcafe chrome:headless ./tests --reporter reportportal"
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,7 @@
     "testcafe-reporter-list": "^2.1.0",
     "testcafe-reporter-minimal": "^2.1.0",
     "testcafe-reporter-nunit": "^0.1.2",
+    "testcafe-reporter-reportportal": "^1.0.29",
     "testcafe-reporter-xunit": "^2.1.0"
   },
   "devDependencies": {
